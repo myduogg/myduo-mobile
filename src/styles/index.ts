@@ -4,6 +4,7 @@ import * as Contanier from './container';
 import * as InputStyle from './input';
 import * as ButtonStyle from './button';
 import * as Fonts from './fonts';
+import * as Color from './colors';
 
 export {
   OptionsNavigator,
@@ -12,4 +13,5 @@ export {
   InputStyle,
   ButtonStyle,
   Fonts,
+  Color,
 };

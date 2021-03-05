@@ -9,6 +9,7 @@ import {
 } from '../../styles';
 import {Input, Button} from '../../components/atoms';
 import {ScrollView} from 'react-native-gesture-handler';
+import {SignUp} from '../../components/molecules';
 
 const Background = require('../../assets/images/background.png');
 const ShortLogo = require('../../assets/images/myduo-shortlogo.png');
@@ -16,6 +17,7 @@ const ShortLogo = require('../../assets/images/myduo-shortlogo.png');
 const Login: React.FC = ({}) => {
   const [email, setEmail] = useState('');
   const [password, setPassoword] = useState('');
+  const [isSignUpVisible, setIsSignUpVisible] = useState(false);
 
   return (
     <ImageBackground source={Background} style={ImagesStyles.BACKGROUND}>
@@ -50,12 +52,13 @@ const Login: React.FC = ({}) => {
             />
             <Button
               description={'Criar nova conta'}
-              onPress={() => {}}
+              onPress={() => setIsSignUpVisible(true)}
               buttonStyle={ButtonStyle.buttons.SIGNUP}
               descriptionStyle={Fonts.fonts.GENERAL}
             />
           </View>
         </ScrollView>
+        <SignUp isVisible={isSignUpVisible} setIsVisible={setIsSignUpVisible} />
       </View>
     </ImageBackground>
   );
