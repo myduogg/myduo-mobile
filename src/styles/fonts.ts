@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
-import {SMOOTH_ORANGE, WHITE} from './colors';
+import {BLACK, SMOOTH_ORANGE, WHITE} from './colors';
 const SIZE_22 = 22;
 const SIZE_18 = 18;
-//const SIZE_16 = 16;
+const SIZE_14 = 14;
 
 export const fonts = StyleSheet.create({
   GENERAL: {
@@ -19,5 +19,13 @@ export const fonts = StyleSheet.create({
     color: WHITE,
     fontSize: SIZE_18,
     letterSpacing: 3,
+  },
+  PRIVACY_POLICY: {
+    color: BLACK,
+    fontSize: SIZE_14,
+    alignSelf: 'center',
+    textAlign: 'justify',
+
+    marginTop: '3%',
   },
 });

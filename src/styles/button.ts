@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import {SMOOTH_ORANGE, STRONG_ORANGE} from './colors';
+import {SMOOTH_ORANGE} from './colors';
 
 export const buttons = StyleSheet.create({
   LOGIN: {
@@ -10,12 +10,21 @@ export const buttons = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  SIGNUP: {
+});
+
+export const signUpButtons = (
+  background: String,
+  marginTop?: String,
+  marginBottom?: String,
+) => {
+  return {
     width: '80%',
     height: Dimensions.get('window').height / 15,
-    backgroundColor: STRONG_ORANGE,
+    backgroundColor: background,
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-});
+    marginTop: marginTop,
+    marginBottom: marginBottom,
+  };
+};

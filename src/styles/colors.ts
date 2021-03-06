@@ -8,3 +8,5 @@ export const SMOOTH_ORANGE2 = '#FF834E';
 export const GRAY3 = '#828282';
 export const SMOOTH_GRAY = '#B6B6B6';
 export const LIGHT_GRAY = '#EDECEC';
+
+export const STRONG_GREEN = '#27AE60';

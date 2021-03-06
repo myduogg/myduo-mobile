@@ -10,7 +10,6 @@ export const container = StyleSheet.create({
     alignItems: 'center',
   },
   ROW: {
-    width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -39,12 +38,11 @@ export const container = StyleSheet.create({
     width: '95%',
     alignSelf: 'center',
   },
-  MODAL_SIGNUP: {
-    width: '90%',
+  SIGNUP: {
+    width: '100%',
     height: Dimensions.get('window').height / 2 - 30,
     backgroundColor: SMOOTH_ORANGE,
     alignSelf: 'center',
-    marginTop: Dimensions.get('window').height / 2 - 92,
     borderRadius: 8,
     elevation: 8,
   },
