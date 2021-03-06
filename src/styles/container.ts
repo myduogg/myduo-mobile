@@ -1,5 +1,5 @@
 import {Dimensions, StyleSheet} from 'react-native';
-import {LIGHT_GRAY, WHITE} from './colors';
+import {LIGHT_GRAY, SMOOTH_ORANGE, WHITE} from './colors';
 export const container = StyleSheet.create({
   FLEX: {
     flex: 1,
@@ -7,6 +7,12 @@ export const container = StyleSheet.create({
   GENERAL: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
+  },
+  ROW: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignItems: 'center',
   },
   LOGIN_CONTAINER: {
@@ -25,5 +31,21 @@ export const container = StyleSheet.create({
     borderWidth: 1,
     borderColor: LIGHT_GRAY,
     width: '90%',
+  },
+  WHITE_LINE: {
+    marginTop: '2%',
+    borderWidth: 0.2,
+    borderColor: WHITE,
+    width: '95%',
+    alignSelf: 'center',
+  },
+  MODAL_SIGNUP: {
+    width: '90%',
+    height: Dimensions.get('window').height / 2 - 30,
+    backgroundColor: SMOOTH_ORANGE,
+    alignSelf: 'center',
+    marginTop: Dimensions.get('window').height / 2 - 92,
+    borderRadius: 8,
+    elevation: 8,
   },
 });

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View, Image, ImageBackground} from 'react-native';
 import {
   ImagesStyles,
-  Contanier,
+  Container,
   InputStyle,
   ButtonStyle,
   Fonts,
@@ -15,16 +15,17 @@ const Background = require('../../assets/images/background.png');
 const ShortLogo = require('../../assets/images/myduo-shortlogo.png');
 
 const Login: React.FC = ({}) => {
+  //login state
   const [email, setEmail] = useState('');
   const [password, setPassoword] = useState('');
   const [isSignUpVisible, setIsSignUpVisible] = useState(false);
 
   return (
     <ImageBackground source={Background} style={ImagesStyles.BACKGROUND}>
-      <View style={Contanier.container.GENERAL}>
+      <View style={Container.container.GENERAL}>
         <Image source={ShortLogo} style={ImagesStyles.SHORT_LOGO} />
-        <ScrollView style={Contanier.container.FLEX}>
-          <View style={Contanier.container.LOGIN_CONTAINER}>
+        <ScrollView style={Container.container.FLEX}>
+          <View style={Container.container.LOGIN_CONTAINER}>
             <Input
               placeholder={'Email'}
               inputStyle={InputStyle.input.LOGIN}
@@ -44,7 +45,7 @@ const Login: React.FC = ({}) => {
               buttonStyle={ButtonStyle.buttons.LOGIN}
               descriptionStyle={Fonts.fonts.GENERAL}
             />
-            <View style={Contanier.container.LINE} />
+            <View style={Container.container.LINE} />
             <Button
               description={'Esqueceu a senha?'}
               onPress={() => {}}

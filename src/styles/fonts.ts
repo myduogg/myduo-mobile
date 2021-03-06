@@ -15,4 +15,9 @@ export const fonts = StyleSheet.create({
     fontSize: SIZE_18,
     marginBottom: '3%',
   },
+  SUBTITLE: {
+    color: WHITE,
+    fontSize: SIZE_18,
+    letterSpacing: 3,
+  },
 });
