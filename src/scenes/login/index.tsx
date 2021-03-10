@@ -54,6 +54,8 @@ const Login: React.FC = ({}) => {
                 descriptionStyle={Fonts.fonts.FORGET_PASSWORD}
               />
               <Button
+                testID={'signup-button'}
+                textTestID={'signup-text'}
                 description={'Criar nova conta'}
                 onPress={() => setIsSignUpVisible(true)}
                 buttonStyle={ButtonStyle.signUpButtons(Color.STRONG_ORANGE)}

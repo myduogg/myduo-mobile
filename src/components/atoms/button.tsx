@@ -6,6 +6,8 @@ export interface Props {
   descriptionStyle?: object;
   buttonStyle?: object;
   onPress?: () => void;
+  testID?: string;
+  textTestID?: string;
 }
 
 const Button: React.FC<Props> = ({
@@ -13,10 +15,14 @@ const Button: React.FC<Props> = ({
   descriptionStyle,
   buttonStyle,
   onPress,
+  testID,
+  textTestID,
 }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={buttonStyle}>
-      <Text style={descriptionStyle}>{description}</Text>
+    <TouchableOpacity testID={testID} onPress={onPress} style={buttonStyle}>
+      <Text testID={textTestID} style={descriptionStyle}>
+        {description}
+      </Text>
     </TouchableOpacity>
   );
 };
