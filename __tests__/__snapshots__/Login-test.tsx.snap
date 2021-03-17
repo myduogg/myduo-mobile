@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/background.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": "100%",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/myduo-shortlogo.png",
+        }
+      }
+      style={
+        Object {
+          "height": "40%",
+          "width": "60%",
+        }
+      }
+    />
+    <RCTScrollView
+      collapsable={false}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "elevation": 8,
+              "flex": 1,
+              "height": 627,
+              "justifyContent": "flex-start",
+              "paddingTop": "3%",
+              "width": 650,
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            onChangeText={[Function]}
+            placeholder="Email"
+            rejectResponderTermination={true}
+            secureTextEntry={false}
+            style={
+              Object {
+                "borderColor": "#B6B6B6",
+                "borderRadius": 8,
+                "borderWidth": 0.8,
+                "height": 88.93333333333334,
+                "marginBottom": "5%",
+                "paddingLeft": 10,
+                "width": "80%",
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+          <TextInput
+            allowFontScaling={true}
+            onChangeText={[Function]}
+            placeholder="Password"
+            rejectResponderTermination={true}
+            secureTextEntry={true}
+            style={
+              Object {
+                "borderColor": "#B6B6B6",
+                "borderRadius": 8,
+                "borderWidth": 0.8,
+                "height": 88.93333333333334,
+                "marginBottom": "5%",
+                "paddingLeft": 10,
+                "width": "80%",
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#EE723C",
+                "borderRadius": 8,
+                "height": 88.93333333333334,
+                "justifyContent": "center",
+                "opacity": 1,
+                "width": "80%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 22,
+                  "letterSpacing": 4,
+                }
+              }
+            >
+              Entrar
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "borderColor": "#EDECEC",
+                "borderWidth": 1,
+                "margin": "5%",
+                "width": "90%",
+              }
+            }
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#EE723C",
+                  "fontSize": 18,
+                  "marginBottom": "3%",
+                }
+              }
+            >
+              Esqueceu a senha?
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FF4D00",
+                "borderRadius": 8,
+                "height": 88.93333333333334,
+                "justifyContent": "center",
+                "marginBottom": undefined,
+                "marginTop": undefined,
+                "opacity": 1,
+                "width": "80%",
+              }
+            }
+            testID="signup-button"
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 22,
+                  "letterSpacing": 4,
+                }
+              }
+              testID="signup-text"
+            >
+              Criar nova conta
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
